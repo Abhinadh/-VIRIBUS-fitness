@@ -3,19 +3,36 @@ import { useState } from 'react'
 
 export function Hero() {
   const [imgError, setImgError] = useState(false)
-  
-  return (
-    <section className="relative min-h-[88vh] flex items-center overflow-hidden" id="home">
-      <img 
-        src={imgError 
-          ? "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80"
-          : "https://images.pexels.com/photos/3764036/pexels-photo-3764036.jpeg?auto=compress&cs=tinysrgb&w=1600"
-        }
-        alt="Professional male and female fitness trainers at FitnessZone gym demonstrating workout techniques"
-        className="absolute inset-0 h-full w-full object-cover"
-        onError={() => setImgError(true)}
-      />
-      <div className="absolute inset-0 bg-black/50" />
+  const [mediaError, setMediaError] = useState(false);
+    
+    return (
+      <section  id="home"
+      className="relative flex items-center justify-center min-h-[88vh] overflow-hidden bg-black text-white"
+      aria-label="FitnessZone Gym Home Section">
+             {!mediaError ? (
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          
+        >
+          <source src="/uploads/fitness.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <img
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80"
+          alt="Professional fitness trainers at FitnessZone gym demonstrating workout techniques"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
+      )}
+
+      {/* Dark Overlay for readability */}
+      <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/50" />
       <div className="container-section relative z-10 grid gap-6 py-24">
         <div className="flex items-center gap-3">
           <span className="inline-block h-1 w-10 bg-red-600" />
