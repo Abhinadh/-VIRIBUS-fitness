@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fitnesszone.com/sitemap.xml
+
+
