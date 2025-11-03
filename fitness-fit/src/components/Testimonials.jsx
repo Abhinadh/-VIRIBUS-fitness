@@ -5,7 +5,7 @@ import { BsStarFill } from 'react-icons/bs'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-// ✅ Updated real Google reviews (no photos)
+// ✅ Real Google reviews (no photos)
 const reviews = [
   {
     name: 'Shalvin Vijayan',
@@ -47,13 +47,13 @@ Highly recommend this gym for anyone looking to achieve their fitness goals! Wor
 const StarRating = ({ rating }) => {
   return (
     <div className="flex items-center gap-0.5">
-      {[...Array(5)].map((_, i) => (
+      {[...Array(5)].map((_, i) =>
         i < rating ? (
           <BsStarFill key={i} className="h-4 w-4 text-yellow-400" />
         ) : (
           <FiStar key={i} className="h-4 w-4 text-gray-300" />
         )
-      ))}
+      )}
       <span className="ml-1 text-xs font-medium text-gray-100">{rating}.0</span>
     </div>
   )
@@ -71,7 +71,10 @@ export function Testimonials() {
           What Members Say
         </h2>
         <p className="mt-4 text-lg text-gray-200">
-          Real stories. Real results. <span className="text-yellow-400 font-semibold">200+ positive feedbacks</span>.
+          Real stories. Real results.{' '}
+          <span className="text-yellow-400 font-semibold">
+            200+ positive feedbacks
+          </span>.
         </p>
       </div>
 
@@ -79,12 +82,12 @@ export function Testimonials() {
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 0,
+          delay: 500, // ⏳ slower slide delay (2.5s)
           disableOnInteraction: false,
-          reverseDirection: true,
-          pauseOnMouseEnter: false,
+          reverseDirection: true, // 🔁 right-to-left direction
+          pauseOnMouseEnter: true, // 🖱️ stop when hovered
         }}
-        speed={1000}
+        speed={1250} // 🐢 slower smooth transition
         loop={true}
         spaceBetween={30}
         slidesPerView={1}

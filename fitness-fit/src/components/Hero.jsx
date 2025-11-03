@@ -6,21 +6,22 @@ export function Hero() {
   const [mediaError, setMediaError] = useState(false);
     
     return (
-      <section  id="home"
-      className="relative flex items-center justify-center min-h-[88vh] overflow-hidden bg-black text-white"
-      aria-label="FitnessZone Gym Home Section">
-             {!mediaError ? (
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          
-        >
-          <source src="/uploads/fitness.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <section
+  id="home"
+  className="relative flex items-center justify-center min-h-[88vh] overflow-hidden text-white bg-transparent"
+  aria-label="FitnessZone Gym Home Section"
+>
+  {!mediaError ? (
+    <video
+      className="absolute inset-0 w-full h-full object-cover brightness-[1.4] contrast-125"
+      autoPlay
+      loop
+      muted
+      playsInline
+      onError={() => setMediaError(true)}
+    >     <source src="/uploads/fitness.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
       ) : (
         <img
           src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80"
