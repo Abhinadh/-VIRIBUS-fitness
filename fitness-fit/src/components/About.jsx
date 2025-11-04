@@ -3,7 +3,7 @@ export function About() {
     <section id="about" className="container-section py-20 md:py-28" data-aos="fade-up">
       <div className="grid gap-10 md:grid-cols-2 md:items-center">
         <img
-          src="https://images.pexels.com/photos/3764036/pexels-photo-3764036.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          src="uploads/images/awrded.jpg"
           alt="Expert fitness trainers at VIRIBUS helping members achieve their fitness goals"
           className="h-72 w-full rounded-2xl object-cover md:h-full"
           loading="lazy"

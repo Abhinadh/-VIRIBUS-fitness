@@ -24,7 +24,11 @@ export function Navbar({ theme, onToggleTheme }) {
     <header className={`sticky top-0 z-50 transition ${scrolled ? 'backdrop-blur bg-white/70 dark:bg-gray-900/60 shadow-sm' : ''}`}>
       <nav className="container-section flex items-center justify-between py-3">
         <a href="/" className="flex items-center gap-2" aria-label="VIRIBUS Home">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-600 text-white font-bold">VG</span>
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-600 text-white font-bold">  <img
+    src="uploads/images/logo.jpg"
+    alt="VIRIBUS Gym Logo"
+    className="h-10 w-10 object-contain rounded-full"
+  /></span>
           <span className="text-lg font-semibold">VIRIBUS</span>
         </a>
 

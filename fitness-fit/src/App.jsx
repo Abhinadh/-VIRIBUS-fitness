@@ -7,6 +7,7 @@ import { Plans } from './components/Plans'
 import { Testimonials } from './components/Testimonials'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { ClassSchedule } from './components/ClassSchedule'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -36,6 +37,7 @@ export function App() {
         <About />
         <Programs />
         <Plans />
+        <ClassSchedule/>
         <Testimonials />
         <Contact />
       </main>

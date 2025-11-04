@@ -1,8 +1,8 @@
 export function Plans() {
   const plans = [
-    { name: 'Basic', price: 19, features: ['Gym access', 'Group classes (2/wk)', 'Locker access'] },
-    { name: 'Pro', price: 39, features: ['All classes', 'Sauna access', 'Personal plan'], highlight: true },
-    { name: 'Elite', price: 69, features: ['Unlimited classes', 'PT (2/mo)', 'Priority support'] },
+    { name: 'Basic', price: 1000, features: ['Gym access', 'Group classes (2/wk)', 'Locker access'] },
+    { name: 'Pro', price: 1500, features: ['All classes', 'Sauna access', 'Personal plan'], highlight: true },
+    { name: 'Elite', price: 2000, features: ['Unlimited classes', 'PT (2/mo)', 'Priority support'] },
   ]
 
   return (
@@ -26,7 +26,7 @@ export function Plans() {
             )}
             <h3 className="text-xl font-semibold">{plan.name}</h3>
             <div className="mt-2 flex items-end gap-1">
-              <span className="text-4xl font-extrabold">${plan.price}</span>
+              <span className="text-4xl font-extrabold">{plan.price}</span>
               <span className="text-sm text-gray-500 dark:text-gray-400">/mo</span>
             </div>
             <ul className="mt-4 space-y-2">
