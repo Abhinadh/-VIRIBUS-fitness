@@ -1,13 +1,9 @@
 import { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
-import { Hero } from './components/Hero'
-import { About } from './components/About'
-import { Programs } from './components/Programs'
-import { Plans } from './components/Plans'
-import { Testimonials } from './components/Testimonials'
-import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
-import { ClassSchedule } from './components/ClassSchedule'
+import { Home } from './pages/Home'
+import { GalleryPage } from './pages/GalleryPage'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -32,15 +28,10 @@ export function App() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <Programs />
-        <Plans />
-        <ClassSchedule/>
-        <Testimonials />
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+      </Routes>
       <Footer />
     </div>
   )
