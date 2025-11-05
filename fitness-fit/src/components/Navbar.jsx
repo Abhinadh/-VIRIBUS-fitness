@@ -20,8 +20,8 @@ export function Navbar({ theme, onToggleTheme }) {
     { to: 'gallery', label: 'Gallery', isRoute: true },
     { to: 'plans', label: 'Plans', isRoute: false },
     { to: 'schedule', label: 'Schedule', isRoute: false },
-    { to: 'testimonials', label: 'Testimonials', isRoute: false },
-    { to: 'contact', label: 'Join Us', isRoute: false },
+    { to: 'testimonials', label: 'Testimonials', isRoute: false }
+    
   ]
 
   return (

@@ -20,11 +20,18 @@ export function About() {
         <div className="space-y-5">
           <h2 className="text-3xl font-bold md:text-4xl">About Us</h2>
 
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Our mission is to make fitness accessible, engaging, and results-driven.
-            Our world-class trainers and diverse programs help you build strength,
-            flexibility, and endurance — your way.
-          </p>
+          <div className="space-y-4 text-lg md:text-xl text-gray-600 dark:text-gray-200 leading-relaxed">
+  <p>
+    Our mission is to make fitness accessible, exciting, and truly life-changing. With dedicated trainers
+    and dynamic workout programs, we empower you to build strength, flexibility, and endurance — at your
+    pace, in your style. Together, we unlock the strongest version of you.
+  </p>
+
+  <p>
+    Whether you’re just starting your fitness journey or pushing toward new personal records, we’re here
+    to guide, support, and inspire you every step of the way.
+  </p>
+</div>
 
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {[

@@ -1,0 +1,30 @@
+✅ dependencies
+
+react
+react-dom
+react-router-dom
+react-hook-form
+@hookform/resolvers
+yup
+react-icons
+swiper
+framer-motion
+react-scroll
+aos
+clsx
+
+
+✅ devDependencies
+
+vite
+@vitejs/plugin-react
+tailwindcss
+postcss
+autoprefixer
+
+Install dependencies
+
+npm install react react-dom react-router-dom react-hook-form @hookform/resolvers yup react-icons swiper framer-motion react-scroll aos clsx
+
+2️⃣ Install dev dependencies
+npm install -D vite @vitejs/plugin-react tailwindcss postcss autoprefixer
