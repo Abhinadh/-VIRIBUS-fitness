@@ -106,7 +106,7 @@ export function Contact() {
               </a>
 
               <a
-                href="https://www.instagram.com/_abhi__nadh_"
+                href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-pink-600 transition-colors"
