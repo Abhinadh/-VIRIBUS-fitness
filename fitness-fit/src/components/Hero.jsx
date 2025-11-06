@@ -37,7 +37,7 @@ export function Hero() {
       <div className="container-section relative z-10 grid gap-6 py-24">
         <div className="flex items-center gap-3">
           <span className="inline-block h-1 w-10 bg-red-600" />
-          <span className="text-sm font-semibold uppercase tracking-widest text-gray-200">VIRIBUS</span>
+          <span className="text-sm font-semibold uppercase tracking-widest text-gray-200">Fitness</span>
         </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

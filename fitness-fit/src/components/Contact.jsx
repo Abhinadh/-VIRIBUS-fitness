@@ -120,7 +120,8 @@ export function Contact() {
           <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm dark:border-gray-800">
             <iframe
               title="VIRIBUS GYM Location Map - Nalukettu, Koratty, Kerala"
-              src="https://www.google.com/maps?q=VIRIBUS+GYM+opposite+MAMHSS+Nalukettu+Koratty+Kerala+680308&output=embed"
+             src="https://www.google.com/maps?q=Lulu+Mall+Kochi&output=embed"
+
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 420 }}

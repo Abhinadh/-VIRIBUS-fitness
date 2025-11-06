@@ -33,7 +33,7 @@ export function Navbar({ theme, onToggleTheme }) {
     alt="VIRIBUS Gym Logo"
     className="h-10 w-10 object-contain rounded-full"
   /></span>
-          <span className="text-lg font-semibold">VIRIBUS</span>
+          <span className="text-lg font-semibold">Fitness</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

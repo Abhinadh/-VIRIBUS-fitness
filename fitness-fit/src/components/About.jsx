@@ -10,7 +10,7 @@ export function About() {
         
         <div className="w-full flex justify-center">
           <img
-            src="/uploads/images/awrded.jpg"
+            src="/uploads/images/gallery-bg.jpg"
             alt="Award-winning fitness center with professional trainers at Viribus Gym"
             className="w-full max-h-[450px] rounded-2xl object-contain"
             loading="lazy"
